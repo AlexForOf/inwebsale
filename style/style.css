@@ -67,7 +67,11 @@ button{
     --blue-col: #0D63F3;
     --white-col: #FFFFFF;
     --green-col: #5DB075;
-    --gray-col: #BDBDBD;
+    --grey-col: #BDBDBD;
+    --status-grey-col: #E2ECF4;
+    --status-green-col: #EAF9E8;
+    --status-red-col: #F5E3DC;
+
 
     /* COLORS */
 
@@ -186,6 +190,66 @@ button{
     background: none;
     border: 1.5px solid var(--blue-col);
     color: var(--blue-col);
+}
+
+.table-meetings{
+    margin-top: 25px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.meetings-flex{
+    display: flex;
+    align-items: center;
+
+}
+
+.table-elem{
+    width: calc(100%/8);
+}
+
+.area{
+    box-sizing: border-box;
+
+    border-radius: var(--button-radius);
+
+    width: fit-content;
+    padding: 10px 20px;
+}
+
+.area-grey{
+    background: var(--status-grey-col);
+}
+
+.area-red{
+    background: var(--status-red-col);
+}
+
+.area-green{
+    background: var(--status-green-col);
+}
+.contents-start{
+    font-size: 14px;
+}
+
+.preferences-button{
+    box-sizing: border-box;
+
+    border-radius: var(--button-radius);
+
+    background: #93A2B812;
+
+    padding: 5px;
+    width: fit-content;
+}
+
+.contents-preferences{
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
 }
 
 /* MAIN STYLES */
