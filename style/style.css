@@ -1,0 +1,119 @@
+/* RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* RESET */
+
+/* VARIABLES */
+
+:root{
+    
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    /* COLORS */
+
+    --blue-col: #0D63F3;
+    --white-col: #FFFFFF;
+    --green-col: #5DB075;
+    --gray-col: #BDBDBD;
+
+    /* COLORS */
+
+    /* FONT */
+    
+    --header-dim: 25px;
+    --main-dim: 16px;
+    --logo-dim: 20px;
+
+    --boldest-weight: 700;
+    --bold-weight: 600;
+    --main-weight: 500;
+
+    /* FONT */
+
+    /* BORDERS */
+
+
+
+    /* BORDERS */
+
+}
+
+/* VARIABLES */
+
+/* MAIN STYLES */
+
+.content{
+    width: 100%;
+}
+
+.main-header{
+    background: var(--blue-col);
+
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 15px 10px;
+}
+
+.logotype{
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: var(--white-col);
+}
+
+.logotype .logotype-text{
+    font-size: var(--logo-dim);
+    font-weight: bold;
+}
+
+/* MAIN STYLES */
