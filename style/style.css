@@ -48,7 +48,7 @@ table {
 /* VARIABLES */
 
 :root{
-    
+
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
     /* COLORS */
@@ -74,7 +74,7 @@ table {
 
     /* BORDERS */
 
-
+    --header-radius: 43px;
 
     /* BORDERS */
 
@@ -89,6 +89,7 @@ table {
 }
 
 .main-header{
+    color: var(--white-col);
     background: var(--blue-col);
 
     box-sizing: border-box;
@@ -99,21 +100,51 @@ table {
 
     width: 100%;
 
-    padding: 15px 10px;
+    border-radius: 0px 0px var(--header-radius) var(--header-radius);
+
+    padding: 15px 25px;
 }
 
 .logotype{
-
     display: flex;
     align-items: center;
     gap: 10px;
-
-    color: var(--white-col);
+    /* margin-left: 25px; */
 }
 
 .logotype .logotype-text{
     font-size: var(--logo-dim);
     font-weight: bold;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+
+    width: 30%;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu img{
+    width: 2em;
+    /* width: 100%; */
+
+    border: var(--white-col);
+    border-radius: 100%;
+
+    background: #5DB075;
+
+    box-shadow: 0px 0px 3px 0px var(--white-col);
+}
+
+.menu .email{
+    font-size: var(--main-dim);
+    font-weight: var(--main-weight);
 }
 
 /* MAIN STYLES */
